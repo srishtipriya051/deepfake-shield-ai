@@ -50,3 +50,42 @@ function Login() {
     </div>
   );
 }
+
+const styles = {
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    backgroundColor: "#111"
+  },
+
+  card: {
+    backgroundColor: "#1e1e1e",
+    padding: "30px",
+    borderRadius: "10px",
+    textAlign: "center",
+    width: "300px",
+    color: "white"
+  },
+
+  input: {
+    width: "100%",
+    padding: "10px",
+    margin: "10px 0",
+    borderRadius: "5px",
+    border: "none"
+  },
+
+  button: {
+    width: "100%",
+    padding: "10px",
+    backgroundColor: "#4CAF50",
+    color: "white",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer"
+  }
+};
+
+export default Login;
