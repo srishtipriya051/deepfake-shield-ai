@@ -48,6 +48,7 @@ function Login() {
         </button>
       </div>
     </div>
+    
   );
 }
 
@@ -88,4 +89,3 @@ const styles = {
   }
 };
 
-export default Login;

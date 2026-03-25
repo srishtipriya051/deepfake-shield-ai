@@ -1,20 +1,21 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.database.connection import engine
-from app.database.base import Base
-from app.routes import auth
-
-Base.metadata.create_all(bind=engine)
+from app.routes.auth import router as auth_router
 
 app = FastAPI()
 
-# Add CORS middleware
+# ✅ CORS (VERY IMPORTANT for frontend)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["*"],  # change later to frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-app.include_router(auth.router, prefix="/api")
+# ✅ include routes
+app.include_router(auth_router)
+
+@app.get("/")
+def home():
+    return {"message": "Backend running 🚀"}
