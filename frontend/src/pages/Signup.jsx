@@ -1,33 +1,26 @@
 import { useState } from "react";
-import { loginUser } from "../services/api";
 import { useNavigate } from "react-router-dom";
+import { registerUser } from "../services/api"; // API function banana padega
 
-function Login() {
+function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [agree, setAgree] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleLogin = async () => {
-    // ✅ validation
-    if (!email || !password) {
-      alert("Please fill all fields");
+  const handleSignup = async () => {
+    if (!agree) {
+      alert("Please accept terms & conditions");
       return;
     }
 
     try {
-      const response = await loginUser({ email, password });
-
-      // ✅ save token
-      localStorage.setItem("token", response.data.access_token);
-
-      alert("Login Successful 🚀");
-
-      // ✅ redirect to dashboard
-      navigate("/dashboard");
-
-    } catch (error) {
-      alert("Login Failed ❌");
+      await registerUser({ email, password });
+      alert("Signup Successful 🚀");
+      navigate("/login");
+    } catch {
+      alert("Signup Failed ❌");
     }
   };
 
@@ -35,7 +28,7 @@ function Login() {
     <div style={styles.container}>
       <div style={styles.card}>
         <h2>DeepFake Shield AI</h2>
-        <p>Login to your account</p>
+        <p>Signup</p>
 
         <input
           type="email"
@@ -53,9 +46,28 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button style={styles.button} onClick={handleLogin}>
-          Login
+        <div style={styles.checkboxContainer}>
+          <input
+            type="checkbox"
+            checked={agree}
+            onChange={() => setAgree(!agree)}
+          />
+          <span style={{ marginLeft: "8px" }}>I agree</span>
+        </div>
+
+        <button style={styles.button} onClick={handleSignup}>
+          Signup
         </button>
+
+        <p style={{ marginTop: "10px" }}>
+          Already have an account?{" "}
+          <span
+            style={styles.link}
+            onClick={() => navigate("/login")}
+          >
+            Login
+          </span>
+        </p>
       </div>
     </div>
   );
@@ -87,6 +99,13 @@ const styles = {
     border: "none"
   },
 
+  checkboxContainer: {
+    display: "flex",
+    alignItems: "center",
+    marginTop: "10px",
+    color: "white"
+  },
+
   button: {
     width: "100%",
     padding: "10px",
@@ -94,8 +113,15 @@ const styles = {
     color: "white",
     border: "none",
     borderRadius: "5px",
-    cursor: "pointer"
+    cursor: "pointer",
+    marginTop: "10px"
+  },
+
+  link: {
+    color: "#4CAF50",
+    cursor: "pointer",
+    textDecoration: "underline"
   }
 };
 
-export default Login;
+export default Signup;

@@ -1,7 +1,7 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import UploadSection from "../components/UploadSection";
-import ResultsSection from "../components/ResultsSection";
+import ResultSection from "../components/ResultSection";
 
 function Dashboard() {
     return (
@@ -10,8 +10,11 @@ function Dashboard() {
 
             <div style={styles.main}>
                 <Navbar />
-                <UploadSection />
-                <ResultsSection />
+
+                <div style={styles.content}>
+                    <UploadSection />
+                    <ResultSection />
+                </div>
             </div>
         </div>
     );
@@ -20,14 +23,19 @@ function Dashboard() {
 const styles = {
     wrapper: {
         display: "flex",
-        background: "#0f172a",
         minHeight: "100vh",
+        background: "#0f172a",
         color: "white"
     },
     main: {
         flex: 1,
-        padding: "20px"
+        padding: "20px",
+        overflowY: "auto"
+    },
+    content: {
+        marginTop: "20px"
     }
 };
 
 export default Dashboard;
+
