@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.database.connection import SessionLocal
 from app.models.user import User
-from app.schemas.user import UserCreate, UserLogin
+from app.schemas.user import UserCreate, UserLogin, UserForgotPassword
 from app.utils.security import hash_password, verify_password, create_access_token
 
 router = APIRouter()
@@ -39,3 +39,15 @@ def login(user: UserLogin, db: Session = Depends(get_db)):
     token = create_access_token({"sub": db_user.email})
 
     return {"access_token": token}
+
+@router.post("/forgot-password")
+def forgot_password(payload: UserForgotPassword, db: Session = Depends(get_db)):
+    db_user = db.query(User).filter(User.email == payload.email).first()
+
+    if not db_user:
+        raise HTTPException(status_code=404, detail="Email not found")
+
+    db_user.password = hash_password(payload.new_password)
+    db.commit()
+
+    return {"message": "Password updated successfully"}
