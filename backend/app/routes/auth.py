@@ -1,16 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-<<<<<<< HEAD
 from backend.app.database.connection import SessionLocal
 from backend.app.models.user import User
 from backend.app.schemas.user import UserCreate, UserLogin, UserForgotPassword
 from backend.app.utils.security import hash_password, verify_password, create_access_token
-=======
-from ..database.connection import SessionLocal
-from ..models.user import User
-from ..schemas.user import UserCreate, UserLogin
-from ..utils.security import hash_password, verify_password, create_access_token
->>>>>>> origin/main
 
 router = APIRouter()
 
@@ -51,8 +44,7 @@ def login(user: UserLogin, db: Session = Depends(get_db)):
 
     token = create_access_token({"sub": db_user.email})
 
-<<<<<<< HEAD
-    return {"access_token": token}
+    return {"access_token": token, "token_type": "bearer"}
 
 @router.post("/forgot-password")
 def forgot_password(payload: UserForgotPassword, db: Session = Depends(get_db)):
@@ -65,9 +57,3 @@ def forgot_password(payload: UserForgotPassword, db: Session = Depends(get_db)):
     db.commit()
 
     return {"message": "Password updated successfully"}
-=======
-    return {
-        "access_token": token,
-        "token_type": "bearer"
-    }
->>>>>>> origin/main
