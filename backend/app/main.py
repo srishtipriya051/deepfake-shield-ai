@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+<<<<<<< HEAD
 from backend.app.database.connection import engine, SessionLocal
 from backend.app.database.base import Base
 from backend.app.routes import auth
@@ -14,11 +15,22 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+=======
+from app.routes.auth import router as auth_router
+
+app = FastAPI()
+
+# ✅ CORS (VERY IMPORTANT for frontend)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # change later to frontend URL
+>>>>>>> origin/main
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+<<<<<<< HEAD
 app.include_router(auth.router)
 
 @app.on_event("startup")
@@ -34,3 +46,11 @@ def seed_demo_user():
             db.commit()
     finally:
         db.close()
+=======
+# ✅ include routes
+app.include_router(auth_router)
+
+@app.get("/")
+def home():
+    return {"message": "Backend running 🚀"}
+>>>>>>> origin/main

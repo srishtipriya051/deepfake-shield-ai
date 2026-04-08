@@ -1,12 +1,20 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
+<<<<<<< HEAD
 from backend.app.database.connection import SessionLocal
 from backend.app.models.user import User
 from backend.app.schemas.user import UserCreate, UserLogin, UserForgotPassword
 from backend.app.utils.security import hash_password, verify_password, create_access_token
+=======
+from ..database.connection import SessionLocal
+from ..models.user import User
+from ..schemas.user import UserCreate, UserLogin
+from ..utils.security import hash_password, verify_password, create_access_token
+>>>>>>> origin/main
 
 router = APIRouter()
 
+# DB Dependency
 def get_db():
     db = SessionLocal()
     try:
@@ -14,14 +22,18 @@ def get_db():
     finally:
         db.close()
 
+# ✅ Signup
 @router.post("/signup")
 def signup(user: UserCreate, db: Session = Depends(get_db)):
-    existing_user = db.query(User).filter(User.email == user.email).first()
-    if existing_user:
+    existing = db.query(User).filter(User.email == user.email).first()
+
+    if existing:
         raise HTTPException(status_code=400, detail="Email already registered")
 
-    hashed_password = hash_password(user.password)
-    new_user = User(email=user.email, password=hashed_password)
+    new_user = User(
+        email=user.email,
+        password=hash_password(user.password)
+    )
 
     db.add(new_user)
     db.commit()
@@ -29,15 +41,17 @@ def signup(user: UserCreate, db: Session = Depends(get_db)):
 
     return {"message": "User created successfully"}
 
+# ✅ Login
 @router.post("/login")
 def login(user: UserLogin, db: Session = Depends(get_db)):
     db_user = db.query(User).filter(User.email == user.email).first()
 
     if not db_user or not verify_password(user.password, db_user.password):
-        raise HTTPException(status_code=400, detail="Invalid credentials")
+        raise HTTPException(status_code=401, detail="Invalid credentials")
 
     token = create_access_token({"sub": db_user.email})
 
+<<<<<<< HEAD
     return {"access_token": token}
 
 @router.post("/forgot-password")
@@ -51,3 +65,9 @@ def forgot_password(payload: UserForgotPassword, db: Session = Depends(get_db)):
     db.commit()
 
     return {"message": "Password updated successfully"}
+=======
+    return {
+        "access_token": token,
+        "token_type": "bearer"
+    }
+>>>>>>> origin/main
