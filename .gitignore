@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Local databases / artifacts
+*.db
+
+# OS / editor
+.DS_Store
+Thumbs.db
