@@ -14,7 +14,6 @@ function Login() {
 
   const navigate = useNavigate();
 
-<<<<<<< HEAD
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -32,16 +31,6 @@ function Login() {
 
     setIsSubmitting(true);
     setMessage("");
-
-=======
-  const handleLogin = async () => {
-    // ✅ validation
-    if (!email || !password) {
-      alert("Please fill all fields");
-      return;
-    }
-
->>>>>>> origin/main
     try {
       if (mode === "signup") {
         await signupUser({ email, password });
@@ -57,7 +46,6 @@ function Login() {
         const response = await loginUser({ email, password });
         const token = response.data.access_token;
 
-<<<<<<< HEAD
         if (rememberMe) {
           localStorage.setItem("token", token);
         } else {
@@ -68,16 +56,6 @@ function Login() {
         setMessage("Login successful. Redirecting...");
         navigate("/dashboard");
       }
-=======
-      // ✅ save token
-      localStorage.setItem("token", response.data.access_token);
-
-      alert("Login Successful 🚀");
-
-      // ✅ redirect to dashboard
-      navigate("/dashboard");
-
->>>>>>> origin/main
     } catch (error) {
       console.error("Login error:", error);
       setMessageType("error");
@@ -210,7 +188,6 @@ function Login() {
 }
 
 const styles = {
-<<<<<<< HEAD
   page: {
     minHeight: "100vh",
     display: "flex",
@@ -378,42 +355,3 @@ const styles = {
 };
 
 export default Login;
-=======
-  container: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100vh",
-    backgroundColor: "#111"
-  },
-
-  card: {
-    backgroundColor: "#1e1e1e",
-    padding: "30px",
-    borderRadius: "10px",
-    textAlign: "center",
-    width: "300px",
-    color: "white"
-  },
-
-  input: {
-    width: "100%",
-    padding: "10px",
-    margin: "10px 0",
-    borderRadius: "5px",
-    border: "none"
-  },
-
-  button: {
-    width: "100%",
-    padding: "10px",
-    backgroundColor: "#4CAF50",
-    color: "white",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer"
-  }
-};
-
-export default Login;
->>>>>>> origin/main
