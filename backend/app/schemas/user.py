@@ -6,12 +6,8 @@ class UserCreate(BaseModel):
 
 class UserLogin(BaseModel):
     email: str
-<<<<<<< HEAD
     password: str
 
 class UserForgotPassword(BaseModel):
     email: str
     new_password: str
-=======
-    password: str
->>>>>>> origin/main
