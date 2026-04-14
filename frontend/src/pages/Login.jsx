@@ -1,6 +1,7 @@
-import { useState } from "react";
-import { forgotPasswordUser, loginUser, signupUser } from "../services/api";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import { forgotPasswordUser, loginUser, signupUser, formatApiDetail } from "../services/api";
+import { useNavigate, useLocation } from "react-router-dom";
+import "./AuthPages.css";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -13,17 +14,40 @@ function Login() {
   const [mode, setMode] = useState("login");
 
   const navigate = useNavigate();
+  const location = useLocation();
+  const signupBannerShown = useRef(false);
+
+  useEffect(() => {
+    if (signupBannerShown.current) return;
+    const st = location.state;
+    if (!st?.signupOk) return;
+    signupBannerShown.current = true;
+    setMessageType("success");
+    setMessage("Account created. log in with your email and password.");
+    if (typeof st.email === "string") setEmail(st.email);
+    navigate(location.pathname, { replace: true, state: {} });
+  }, [location, navigate]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (!email.trim() || !password.trim()) {
+    const submitter = event.nativeEvent?.submitter;
+    const modeFromDom =
+      submitter?.getAttribute?.("data-mode") || submitter?.dataset?.mode || null;
+    const activeMode =
+      modeFromDom === "signup" || modeFromDom === "forgot" || modeFromDom === "login"
+        ? modeFromDom
+        : mode;
+
+    const trimmedEmail = email.trim();
+
+    if (!trimmedEmail || !password.trim()) {
       setMessageType("error");
       setMessage("Please enter both email and password.");
       return;
     }
 
-    if (!email.includes("@")) {
+    if (!trimmedEmail.includes("@")) {
       setMessageType("error");
       setMessage("Please enter a valid email address.");
       return;
@@ -32,18 +56,18 @@ function Login() {
     setIsSubmitting(true);
     setMessage("");
     try {
-      if (mode === "signup") {
-        await signupUser({ email, password });
+      if (activeMode === "signup") {
+        await signupUser({ email: trimmedEmail, password });
         setMessageType("success");
-        setMessage("Signup successful. Please sign in.");
+        setMessage("Signup successful. Please log in.");
         setMode("login");
-      } else if (mode === "forgot") {
-        await forgotPasswordUser({ email, new_password: password });
+      } else if (activeMode === "forgot") {
+        await forgotPasswordUser({ email: trimmedEmail, new_password: password });
         setMessageType("success");
-        setMessage("Password reset successful. Please sign in.");
+        setMessage("Password reset successful. Please log in.");
         setMode("login");
       } else {
-        const response = await loginUser({ email, password });
+        const response = await loginUser({ email: trimmedEmail, password });
         const token = response.data.access_token;
 
         if (rememberMe) {
@@ -63,28 +87,30 @@ function Login() {
         signup: "Signup failed. Try another email.",
         forgot: "Password reset failed. Check your email and try again.",
         login: "Login failed. Try again.",
-      }[mode];
-      setMessage(error?.response?.data?.detail || fallback);
+      }[activeMode];
+      setMessage(formatApiDetail(error, fallback));
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <div style={styles.page}>
-      <div style={styles.leftPanel}>
-        <div style={styles.brandMark}>»»</div>
+    <div style={styles.page} className="auth-login-page">
+      <div style={styles.leftPanel} className="auth-login-left">
+        <div style={styles.brandMark} className="auth-brand-mark">
+          »»
+        </div>
         <h1 style={styles.welcomeTitle}>
           WELCOME <span style={styles.welcomeDark}>BACK!</span>
         </h1>
         <p style={styles.welcomeText}>
-          You can sign in to access with your existing account
+          You can log in to access with your existing account
         </p>
       </div>
 
-      <form style={styles.rightPanel} onSubmit={handleSubmit}>
+      <form style={styles.rightPanel} className="auth-login-right" onSubmit={handleSubmit}>
         <h2 style={styles.signinTitle}>
-          {mode === "signup" ? "SIGN UP" : mode === "forgot" ? "RESET PASSWORD" : "SIGN IN"}
+          {mode === "signup" ? "SIGN UP" : mode === "forgot" ? "RESET PASSWORD" : "LOG IN"}
         </h2>
 
         <div style={styles.inputWrap}>
@@ -140,7 +166,12 @@ function Login() {
           </p>
         ) : null}
 
-        <button style={styles.submitButton} type="submit" disabled={isSubmitting}>
+        <button
+          style={styles.submitButton}
+          type="submit"
+          data-mode={mode}
+          disabled={isSubmitting}
+        >
           {isSubmitting
             ? mode === "signup"
               ? "CREATING..."
@@ -151,7 +182,7 @@ function Login() {
               ? "CREATE ACCOUNT"
               : mode === "forgot"
                 ? "RESET PASSWORD"
-              : "SIGN IN"}
+              : "LOG IN"}
         </button>
 
         <button
@@ -169,7 +200,7 @@ function Login() {
           {mode === "signup"
             ? "Already have an account ? "
             : mode === "forgot"
-              ? "Back to sign in ? "
+              ? "Back to log in ? "
               : "Don&apos;t have any account ? "}
           <button
             type="button"
@@ -179,7 +210,7 @@ function Login() {
               setMode((prev) => (prev === "signup" || prev === "forgot" ? "login" : "signup"));
             }}
           >
-            {mode === "signup" || mode === "forgot" ? "Sign in" : "Sign up"}
+            {mode === "signup" || mode === "forgot" ? "Log in" : "Sign up"}
           </button>
         </p>
       </form>
@@ -232,7 +263,7 @@ const styles = {
   },
   rightPanel: {
     width: "45%",
-    minWidth: "430px",
+    minWidth: "min(100%, 430px)",
     maxWidth: "620px",
     backgroundColor: "#f8fafc",
     borderTopLeftRadius: "36px",

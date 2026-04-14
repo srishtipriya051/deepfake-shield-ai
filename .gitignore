@@ -15,6 +15,7 @@ dist/
 
 # Local databases / artifacts
 *.db
+.env
 
 # OS / editor
 .DS_Store
