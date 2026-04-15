@@ -104,3 +104,14 @@ async def detect(file: UploadFile = File(...)):
         "realProbability": result.real_probability,
     }
 ```
+# Deepfake Shield AI
+
+This project detects fake images and videos using AI.
+
+## Model File
+
+The model file is not included in this repository because it exceeds GitHub's size limit.
+
+Download the model file and place it in the following folder:
+
+backend/app/models/model.safetensors
