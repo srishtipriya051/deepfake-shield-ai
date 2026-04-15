@@ -1,0 +1,54 @@
+/* Login: stack panels on small screens */
+.auth-login-page {
+  flex-direction: row;
+}
+
+@media (max-width: 900px) {
+  .auth-login-page {
+    flex-direction: column;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .auth-login-left {
+    flex: 0 0 auto !important;
+    padding: 56px 22px 28px !important;
+    position: relative;
+  }
+
+  .auth-login-left .auth-brand-mark {
+    position: static !important;
+    margin-bottom: 12px;
+  }
+
+  .auth-login-right {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: 1 1 auto !important;
+    border-radius: 28px 28px 0 0 !important;
+    padding: 36px 22px 40px !important;
+    box-shadow: 0 -10px 30px rgba(30, 64, 175, 0.1) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-login-right {
+    padding: 28px 18px 32px !important;
+  }
+}
+
+/* Signup */
+.auth-signup-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.auth-signup-card {
+  width: min(100%, 400px);
+  max-width: 100%;
+}

@@ -1,5 +1,141 @@
 [
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "build_report_narrative",
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "isExtraImport": true,
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "isExtraImport": true,
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_upload",
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "isExtraImport": true,
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "predict_deepfake_probability",
+        "importPath": "backend.app.utils.deepfake_model",
+        "description": "backend.app.utils.deepfake_model",
+        "isExtraImport": true,
+        "detail": "backend.app.utils.deepfake_model",
+        "documentation": {}
+    },
+    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -9,14 +145,6 @@
     },
     {
         "label": "sessionmaker",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "declarative_base",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -64,27 +192,76 @@
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.database.connection",
-        "description": "app.database.connection",
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
         "isExtraImport": true,
-        "detail": "app.database.connection",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
         "documentation": {}
     },
     {
         "label": "Base",
-        "importPath": "app.database.connection",
-        "description": "app.database.connection",
+        "importPath": "backend.app.database.base",
+        "description": "backend.app.database.base",
         "isExtraImport": true,
-        "detail": "app.database.connection",
+        "detail": "backend.app.database.base",
         "documentation": {}
     },
     {
-        "label": "engine",
-        "importPath": "app.database.connection",
-        "description": "app.database.connection",
+        "label": "Base",
+        "importPath": "backend.app.database.base",
+        "description": "backend.app.database.base",
         "isExtraImport": true,
-        "detail": "app.database.connection",
+        "detail": "backend.app.database.base",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -120,19 +297,115 @@
         "documentation": {}
     },
     {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "analyze_uploaded_media",
+        "importPath": "backend.app.controllers.detection_controller",
+        "description": "backend.app.controllers.detection_controller",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "backend.app.controllers.detection_controller",
         "documentation": {}
     },
     {
-        "label": "HTTPException",
-        "importPath": "fastapi",
-        "description": "fastapi",
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
         "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "backend.app.database.connection",
+        "description": "backend.app.database.connection",
+        "isExtraImport": true,
+        "detail": "backend.app.database.connection",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "importPath": "backend.app.database.connection",
+        "description": "backend.app.database.connection",
+        "isExtraImport": true,
+        "detail": "backend.app.database.connection",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "backend.app.database.connection",
+        "description": "backend.app.database.connection",
+        "isExtraImport": true,
+        "detail": "backend.app.database.connection",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "backend.app.models.user",
+        "description": "backend.app.models.user",
+        "isExtraImport": true,
+        "detail": "backend.app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "backend.app.models.user",
+        "description": "backend.app.models.user",
+        "isExtraImport": true,
+        "detail": "backend.app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "importPath": "backend.app.schemas.user",
+        "description": "backend.app.schemas.user",
+        "isExtraImport": true,
+        "detail": "backend.app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "importPath": "backend.app.schemas.user",
+        "description": "backend.app.schemas.user",
+        "isExtraImport": true,
+        "detail": "backend.app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserForgotPassword",
+        "importPath": "backend.app.schemas.user",
+        "description": "backend.app.schemas.user",
+        "isExtraImport": true,
+        "detail": "backend.app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "backend.app.utils.security",
+        "description": "backend.app.utils.security",
+        "isExtraImport": true,
+        "detail": "backend.app.utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "backend.app.utils.security",
+        "description": "backend.app.utils.security",
+        "isExtraImport": true,
+        "detail": "backend.app.utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "importPath": "backend.app.utils.security",
+        "description": "backend.app.utils.security",
+        "isExtraImport": true,
+        "detail": "backend.app.utils.security",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "backend.app.utils.security",
+        "description": "backend.app.utils.security",
+        "isExtraImport": true,
+        "detail": "backend.app.utils.security",
         "documentation": {}
     },
     {
@@ -144,19 +417,150 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
         "isExtraImport": true,
-        "detail": "pydantic",
+        "detail": "__future__",
         "documentation": {}
     },
     {
-        "label": "CryptContext",
-        "importPath": "passlib.context",
-        "description": "passlib.context",
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
         "isExtraImport": true,
-        "detail": "passlib.context",
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageOps",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageOps",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageOps",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "load_detectors_from_env",
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "isExtraImport": true,
+        "detail": "backend.app.services.deepfake_detector",
         "documentation": {}
     },
     {
@@ -184,6 +588,31 @@
         "documentation": {}
     },
     {
+        "label": "bcrypt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "bcrypt",
+        "description": "bcrypt",
+        "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "load_env_file",
+        "importPath": "backend.app.utils.env",
+        "description": "backend.app.utils.env",
+        "isExtraImport": true,
+        "detail": "backend.app.utils.env",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
         "label": "CORSMiddleware",
         "importPath": "fastapi.middleware.cors",
         "description": "fastapi.middleware.cors",
@@ -193,26 +622,43 @@
     },
     {
         "label": "router",
-        "importPath": "app.routes.auth",
-        "description": "app.routes.auth",
+        "importPath": "backend.app.routes.analyze",
+        "description": "backend.app.routes.analyze",
         "isExtraImport": true,
-        "detail": "app.routes.auth",
+        "detail": "backend.app.routes.analyze",
         "documentation": {}
     },
     {
-        "label": "users_db",
-        "importPath": "app.database",
-        "description": "app.database",
+        "label": "router",
+        "importPath": "backend.app.routes.auth",
+        "description": "backend.app.routes.auth",
         "isExtraImport": true,
-        "detail": "app.database",
+        "detail": "backend.app.routes.auth",
         "documentation": {}
     },
     {
-        "label": "create_access_token",
-        "importPath": "app.auth",
-        "description": "app.auth",
+        "label": "sys,",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "app.auth",
+        "importPath": "sys.",
+        "description": "sys.",
+        "detail": "sys.",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.connection",
+        "description": "app.database.connection",
+        "isExtraImport": true,
+        "detail": "app.database.connection",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "app.database.connection",
+        "description": "app.database.connection",
+        "isExtraImport": true,
+        "detail": "app.database.connection",
         "documentation": {}
     },
     {
@@ -221,6 +667,15 @@
         "description": "app.models.user",
         "isExtraImport": true,
         "detail": "app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "importlib,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "importlib.",
+        "description": "importlib.",
+        "detail": "importlib.",
         "documentation": {}
     },
     {
@@ -233,6 +688,49 @@
         "documentation": {}
     },
     {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "isExtraImport": true,
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_uploaded_media",
+        "kind": 2,
+        "importPath": "backend.app.controllers.detection_controller",
+        "description": "backend.app.controllers.detection_controller",
+        "peekOfCode": "def analyze_uploaded_media(content: bytes, filename: str, declared_mime: str | None) -> Dict[str, Any]:\n    try:\n        model_result = predict_deepfake_probability(content, filename, declared_mime)\n    except Exception as e:\n        raise RuntimeError(f\"Deepfake detection failed: {str(e)}\")\n    prediction_score = float(model_result.get(\"prediction_score\", 0.5))\n    prediction_score = max(0.0, min(1.0, prediction_score))\n    fake_probability = int(model_result.get(\"fakeProbability\", int(prediction_score * 100)))\n    fake_probability = max(0, min(100, fake_probability))\n    real_probability = int(model_result.get(\"realProbability\", 100 - fake_probability))",
+        "detail": "backend.app.controllers.detection_controller",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "kind": 5,
         "importPath": "backend.app.database.base",
@@ -242,11 +740,29 @@
         "documentation": {}
     },
     {
+        "label": "_backend_dir",
+        "kind": 5,
+        "importPath": "backend.app.database.connection",
+        "description": "backend.app.database.connection",
+        "peekOfCode": "_backend_dir = Path(__file__).resolve().parent.parent.parent\n_default_sqlite = _backend_dir / \"deepfake_local.db\"\nDATABASE_URL = os.getenv(\"DATABASE_URL\", f\"sqlite:///{_default_sqlite.as_posix()}\")\nengine = create_engine(\n    DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)",
+        "detail": "backend.app.database.connection",
+        "documentation": {}
+    },
+    {
+        "label": "_default_sqlite",
+        "kind": 5,
+        "importPath": "backend.app.database.connection",
+        "description": "backend.app.database.connection",
+        "peekOfCode": "_default_sqlite = _backend_dir / \"deepfake_local.db\"\nDATABASE_URL = os.getenv(\"DATABASE_URL\", f\"sqlite:///{_default_sqlite.as_posix()}\")\nengine = create_engine(\n    DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)",
+        "detail": "backend.app.database.connection",
+        "documentation": {}
+    },
+    {
         "label": "DATABASE_URL",
         "kind": 5,
         "importPath": "backend.app.database.connection",
         "description": "backend.app.database.connection",
-        "peekOfCode": "DATABASE_URL = \"sqlite:///./deepfake.db\"\nengine = create_engine(DATABASE_URL, connect_args={\"check_same_thread\": False})\nSessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)\nBase = declarative_base()",
+        "peekOfCode": "DATABASE_URL = os.getenv(\"DATABASE_URL\", f\"sqlite:///{_default_sqlite.as_posix()}\")\nengine = create_engine(\n    DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)",
         "detail": "backend.app.database.connection",
         "documentation": {}
     },
@@ -255,7 +771,7 @@
         "kind": 5,
         "importPath": "backend.app.database.connection",
         "description": "backend.app.database.connection",
-        "peekOfCode": "engine = create_engine(DATABASE_URL, connect_args={\"check_same_thread\": False})\nSessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)\nBase = declarative_base()",
+        "peekOfCode": "engine = create_engine(\n    DATABASE_URL, connect_args={\"check_same_thread\": False}\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)",
         "detail": "backend.app.database.connection",
         "documentation": {}
     },
@@ -264,16 +780,7 @@
         "kind": 5,
         "importPath": "backend.app.database.connection",
         "description": "backend.app.database.connection",
-        "peekOfCode": "SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)\nBase = declarative_base()",
-        "detail": "backend.app.database.connection",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "kind": 5,
-        "importPath": "backend.app.database.connection",
-        "description": "backend.app.database.connection",
-        "peekOfCode": "Base = declarative_base()",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)",
         "detail": "backend.app.database.connection",
         "documentation": {}
     },
@@ -287,11 +794,20 @@
         "documentation": {}
     },
     {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.routes.analyze",
+        "description": "backend.app.routes.analyze",
+        "peekOfCode": "router = APIRouter(tags=[\"analyze\"])\nasync def _handle_upload(file: UploadFile) -> dict:\n    if not file.filename:\n        raise HTTPException(status_code=400, detail=\"Missing filename.\")\n    try:\n        raw = await file.read()\n    except Exception as e:  # noqa: BLE001\n        raise HTTPException(status_code=400, detail=f\"Could not read upload: {e}\") from e\n    if not raw:\n        raise HTTPException(status_code=400, detail=\"Empty file.\")",
+        "detail": "backend.app.routes.analyze",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "kind": 2,
         "importPath": "backend.app.routes.auth",
         "description": "backend.app.routes.auth",
-        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n# ✅ Signup\n@router.post(\"/signup\")\ndef signup(user: UserCreate, db: Session = Depends(get_db)):\n    existing = db.query(User).filter(User.email == user.email).first()",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n# ✅ Signup\n@router.post(\"/signup\")\ndef signup(user: UserCreate, db: Session = Depends(get_db)):\n    email = _normalize_email(user.email)",
         "detail": "backend.app.routes.auth",
         "documentation": {}
     },
@@ -300,7 +816,7 @@
         "kind": 2,
         "importPath": "backend.app.routes.auth",
         "description": "backend.app.routes.auth",
-        "peekOfCode": "def signup(user: UserCreate, db: Session = Depends(get_db)):\n    existing = db.query(User).filter(User.email == user.email).first()\n    if existing:\n        raise HTTPException(status_code=400, detail=\"Email already registered\")\n    new_user = User(\n        email=user.email,\n        password=hash_password(user.password)\n    )\n    db.add(new_user)\n    db.commit()",
+        "peekOfCode": "def signup(user: UserCreate, db: Session = Depends(get_db)):\n    email = _normalize_email(user.email)\n    existing = db.query(User).filter(func.lower(User.email) == email).first()\n    if existing:\n        raise HTTPException(status_code=400, detail=\"Email already registered\")\n    new_user = User(\n        email=email,\n        password=hash_password(user.password)\n    )\n    db.add(new_user)",
         "detail": "backend.app.routes.auth",
         "documentation": {}
     },
@@ -309,7 +825,16 @@
         "kind": 2,
         "importPath": "backend.app.routes.auth",
         "description": "backend.app.routes.auth",
-        "peekOfCode": "def login(user: UserLogin, db: Session = Depends(get_db)):\n    db_user = db.query(User).filter(User.email == user.email).first()\n    if not db_user or not verify_password(user.password, db_user.password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    token = create_access_token({\"sub\": db_user.email})\n    return {\n        \"access_token\": token,\n        \"token_type\": \"bearer\"\n    }",
+        "peekOfCode": "def login(user: UserLogin, db: Session = Depends(get_db)):\n    email = _normalize_email(user.email)\n    db_user = db.query(User).filter(func.lower(User.email) == email).first()\n    if not db_user or not verify_password(user.password, db_user.password):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    token = create_access_token({\"sub\": db_user.email})\n    return {\"access_token\": token, \"token_type\": \"bearer\"}\n@router.post(\"/forgot-password\")\ndef forgot_password(payload: UserForgotPassword, db: Session = Depends(get_db)):\n    email = _normalize_email(payload.email)",
+        "detail": "backend.app.routes.auth",
+        "documentation": {}
+    },
+    {
+        "label": "forgot_password",
+        "kind": 2,
+        "importPath": "backend.app.routes.auth",
+        "description": "backend.app.routes.auth",
+        "peekOfCode": "def forgot_password(payload: UserForgotPassword, db: Session = Depends(get_db)):\n    email = _normalize_email(payload.email)\n    db_user = db.query(User).filter(func.lower(User.email) == email).first()\n    if not db_user:\n        raise HTTPException(status_code=404, detail=\"Email not found\")\n    db_user.password = hash_password(payload.new_password)\n    db.commit()\n    return {\"message\": \"Password updated successfully\"}",
         "detail": "backend.app.routes.auth",
         "documentation": {}
     },
@@ -318,7 +843,7 @@
         "kind": 5,
         "importPath": "backend.app.routes.auth",
         "description": "backend.app.routes.auth",
-        "peekOfCode": "router = APIRouter()\n# DB Dependency\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()\n# ✅ Signup\n@router.post(\"/signup\")",
+        "peekOfCode": "router = APIRouter()\ndef _normalize_email(value: str) -> str:\n    return value.strip().lower()\n# DB Dependency\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
         "detail": "backend.app.routes.auth",
         "documentation": {}
     },
@@ -327,7 +852,7 @@
         "kind": 6,
         "importPath": "backend.app.schemas.user",
         "description": "backend.app.schemas.user",
-        "peekOfCode": "class UserCreate(BaseModel):\n    email: str\n    password: str\nclass UserLogin(BaseModel):\n    email: str\n    password: str",
+        "peekOfCode": "class UserCreate(BaseModel):\n    email: str\n    password: str\nclass UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserForgotPassword(BaseModel):\n    email: str\n    new_password: str",
         "detail": "backend.app.schemas.user",
         "documentation": {}
     },
@@ -336,8 +861,323 @@
         "kind": 6,
         "importPath": "backend.app.schemas.user",
         "description": "backend.app.schemas.user",
-        "peekOfCode": "class UserLogin(BaseModel):\n    email: str\n    password: str",
+        "peekOfCode": "class UserLogin(BaseModel):\n    email: str\n    password: str\nclass UserForgotPassword(BaseModel):\n    email: str\n    new_password: str",
         "detail": "backend.app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserForgotPassword",
+        "kind": 6,
+        "importPath": "backend.app.schemas.user",
+        "description": "backend.app.schemas.user",
+        "peekOfCode": "class UserForgotPassword(BaseModel):\n    email: str\n    new_password: str",
+        "detail": "backend.app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "PredictionOutput",
+        "kind": 6,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "class PredictionOutput:\n    label: str\n    fake_probability: int\n    real_probability: int\n    fake_score: float\n    real_score: float\n    model_name: str\n    framework: str\n@dataclass\nclass PreprocessedImage:",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "PreprocessedImage",
+        "kind": 6,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "class PreprocessedImage:\n    rgb: np.ndarray\n    tf_batch: np.ndarray\n    torch_tensor: np.ndarray\n@lru_cache(maxsize=1)\ndef _get_mtcnn_detector() -> Any | None:\n    if MTCNN is None:\n        return None\n    try:\n        return MTCNN()",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "DeepfakeDetector",
+        "kind": 6,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "class DeepfakeDetector:\n    def __init__(\n        self,\n        model_name: str | None = None,\n        weights_path: str | None = None,\n        device: str | None = None,\n    ) -> None:\n        self.model_name = (model_name or os.getenv(\"DEEPFAKE_MODEL_NAME\", \"xception\")).strip().lower()\n        self.weights_path = (weights_path or os.getenv(\"DEEPFAKE_MODEL_PATH\", \"\")).strip() or None\n        self.device = (device or os.getenv(\"DEEPFAKE_MODEL_DEVICE\", \"cpu\")).strip().lower()",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "decode_uploaded_image",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def decode_uploaded_image(content: bytes) -> np.ndarray:\n    image = Image.open(io.BytesIO(content))\n    image = ImageOps.exif_transpose(image).convert(\"RGB\")\n    return np.asarray(image, dtype=np.uint8)\ndef preprocess_image_array(\n    rgb: np.ndarray,\n    *,\n    image_size: tuple[int, int] = IMAGE_SIZE,\n    crop_face: bool = True,\n) -> PreprocessedImage:",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_image_array",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def preprocess_image_array(\n    rgb: np.ndarray,\n    *,\n    image_size: tuple[int, int] = IMAGE_SIZE,\n    crop_face: bool = True,\n) -> PreprocessedImage:\n    source = _extract_face(rgb) if crop_face else rgb\n    resized = Image.fromarray(source).resize(image_size)\n    resized_rgb = np.asarray(resized, dtype=np.float32)\n    normalized_01 = resized_rgb / 255.0",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_uploaded_image",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def preprocess_uploaded_image(\n    content: bytes,\n    *,\n    image_size: tuple[int, int] = IMAGE_SIZE,\n    crop_face: bool = True,\n) -> PreprocessedImage:\n    rgb = decode_uploaded_image(content)\n    return preprocess_image_array(rgb, image_size=image_size, crop_face=crop_face)\ndef build_xception_model(input_shape: tuple[int, int, int] = (224, 224, 3)) -> Any:\n    try:",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "build_xception_model",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def build_xception_model(input_shape: tuple[int, int, int] = (224, 224, 3)) -> Any:\n    try:\n        from tensorflow.keras import Model, layers\n        from tensorflow.keras.applications import Xception\n    except Exception as exc:  # noqa: BLE001\n        raise RuntimeError(\"TensorFlow is required to build the Xception model.\") from exc\n    base = Xception(include_top=False, weights=\"imagenet\", input_shape=input_shape, pooling=\"avg\")\n    output = layers.Dense(1, activation=\"sigmoid\", name=\"deepfake_probability\")(base.output)\n    return Model(inputs=base.input, outputs=output, name=\"xception_deepfake\")\ndef build_mesonet(input_shape: tuple[int, int, int] = (224, 224, 3)) -> Any:",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "build_mesonet",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def build_mesonet(input_shape: tuple[int, int, int] = (224, 224, 3)) -> Any:\n    try:\n        from tensorflow.keras import Sequential, layers\n    except Exception as exc:  # noqa: BLE001\n        raise RuntimeError(\"TensorFlow is required to build the MesoNet model.\") from exc\n    return Sequential(\n        [\n            layers.Input(shape=input_shape),\n            layers.Conv2D(8, (3, 3), padding=\"same\", activation=\"relu\"),\n            layers.BatchNormalization(),",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "build_efficientnet_b4_model",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def build_efficientnet_b4_model(num_classes: int = 1) -> Any:\n    try:\n        import torch.nn as nn\n        from torchvision.models import efficientnet_b4\n    except Exception as exc:  # noqa: BLE001\n        raise RuntimeError(\"PyTorch and torchvision are required to build EfficientNet-B4.\") from exc\n    model = efficientnet_b4(weights=None)\n    in_features = model.classifier[1].in_features\n    model.classifier[1] = nn.Linear(in_features, num_classes)\n    return model",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "load_tensorflow_model",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def load_tensorflow_model(model_name: ModelName, weights_path: str | None = None) -> Any:\n    normalized_name = model_name.lower()\n    if normalized_name == \"xception\":\n        model = build_xception_model()\n    elif normalized_name == \"mesonet\":\n        model = build_mesonet()\n    else:\n        raise ValueError(f\"TensorFlow model '{model_name}' is not supported.\")\n    if weights_path:\n        suffix = Path(weights_path).suffix.lower()",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "load_torch_model",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def load_torch_model(model_name: ModelName, weights_path: str | None = None, device: str = \"cpu\") -> Any:\n    normalized_name = model_name.lower()\n    if normalized_name != \"efficientnet_b4\":\n        raise ValueError(f\"PyTorch model '{model_name}' is not supported.\")\n    try:\n        import torch\n    except Exception as exc:  # noqa: BLE001\n        raise RuntimeError(\"PyTorch is required to load the EfficientNet-B4 model.\") from exc\n    model = build_efficientnet_b4_model()\n    if weights_path:",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "load_detector_from_env",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def load_detector_from_env() -> DeepfakeDetector:\n    return DeepfakeDetector()\ndef load_detectors_from_env() -> list[DeepfakeDetector]:\n    configured = (os.getenv(\"DEEPFAKE_MODEL_PATHS\", \"\") or \"\").strip()\n    device = (os.getenv(\"DEEPFAKE_MODEL_DEVICE\", \"cpu\") or \"cpu\").strip().lower()\n    detectors: list[DeepfakeDetector] = []\n    if configured:\n        for chunk in configured.split(\";\"):\n            item = chunk.strip()\n            if not item:",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "load_detectors_from_env",
+        "kind": 2,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "def load_detectors_from_env() -> list[DeepfakeDetector]:\n    configured = (os.getenv(\"DEEPFAKE_MODEL_PATHS\", \"\") or \"\").strip()\n    device = (os.getenv(\"DEEPFAKE_MODEL_DEVICE\", \"cpu\") or \"cpu\").strip().lower()\n    detectors: list[DeepfakeDetector] = []\n    if configured:\n        for chunk in configured.split(\";\"):\n            item = chunk.strip()\n            if not item:\n                continue\n            if \"=\" not in item:",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "ModelFramework",
+        "kind": 5,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "ModelFramework = Literal[\"tensorflow\", \"torch\"]\nModelName = Literal[\"xception\", \"efficientnet_b4\", \"mesonet\"]\nIMAGE_SIZE = (224, 224)\nIMAGENET_MEAN = np.array([0.485, 0.456, 0.406], dtype=np.float32)\nIMAGENET_STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)\n@dataclass\nclass PredictionOutput:\n    label: str\n    fake_probability: int\n    real_probability: int",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "ModelName",
+        "kind": 5,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "ModelName = Literal[\"xception\", \"efficientnet_b4\", \"mesonet\"]\nIMAGE_SIZE = (224, 224)\nIMAGENET_MEAN = np.array([0.485, 0.456, 0.406], dtype=np.float32)\nIMAGENET_STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)\n@dataclass\nclass PredictionOutput:\n    label: str\n    fake_probability: int\n    real_probability: int\n    fake_score: float",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_SIZE",
+        "kind": 5,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "IMAGE_SIZE = (224, 224)\nIMAGENET_MEAN = np.array([0.485, 0.456, 0.406], dtype=np.float32)\nIMAGENET_STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)\n@dataclass\nclass PredictionOutput:\n    label: str\n    fake_probability: int\n    real_probability: int\n    fake_score: float\n    real_score: float",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGENET_MEAN",
+        "kind": 5,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "IMAGENET_MEAN = np.array([0.485, 0.456, 0.406], dtype=np.float32)\nIMAGENET_STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)\n@dataclass\nclass PredictionOutput:\n    label: str\n    fake_probability: int\n    real_probability: int\n    fake_score: float\n    real_score: float\n    model_name: str",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGENET_STD",
+        "kind": 5,
+        "importPath": "backend.app.services.deepfake_detector",
+        "description": "backend.app.services.deepfake_detector",
+        "peekOfCode": "IMAGENET_STD = np.array([0.229, 0.224, 0.225], dtype=np.float32)\n@dataclass\nclass PredictionOutput:\n    label: str\n    fake_probability: int\n    real_probability: int\n    fake_score: float\n    real_score: float\n    model_name: str\n    framework: str",
+        "detail": "backend.app.services.deepfake_detector",
+        "documentation": {}
+    },
+    {
+        "label": "FaceDetection",
+        "kind": 6,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "class FaceDetection:\n    x: int\n    y: int\n    w: int\n    h: int\n    detector: str\n    confidence: float | None = None\n_MTCNN_DETECTOR: Any | None = None\n_MTCNN_ATTEMPTED = False\ndef _get_mtcnn_detector() -> Any | None:",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "detect_faces",
+        "kind": 2,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "def detect_faces(rgb: np.ndarray) -> list[FaceDetection]:\n    # Stage 1 of pipeline: run both Haar and MTCNN and merge for better recall.\n    haar_faces = _detect_faces_opencv(rgb)\n    mtcnn_faces = _detect_faces_mtcnn(rgb)\n    return _merge_face_detections(haar_faces, mtcnn_faces)\ndef _rgb_to_gray(rgb: np.ndarray) -> np.ndarray:\n    if cv2 is not None:\n        return cv2.cvtColor(rgb.astype(np.uint8), cv2.COLOR_RGB2GRAY)\n    arr = rgb.astype(np.float32)\n    return np.clip((0.299 * arr[..., 0] + 0.587 * arr[..., 1] + 0.114 * arr[..., 2]), 0, 255).astype(np.uint8)",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_full_frame",
+        "kind": 2,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "def analyze_full_frame(rgb: np.ndarray) -> dict[str, Any]:\n    gray = _rgb_to_gray(rgb)\n    pixel = _jpeg_block_artifact_score(gray)\n    chroma = _chroma_artifact_score(rgb)\n    lighting = _lighting_mismatch_score(rgb)\n    lap = _laplacian_variance(gray)\n    edge_density = _edge_density(gray)\n    noise = _noise_residual_score(gray)\n    banding = _banding_score(gray)\n    fallback_score = _clamp01(",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_face_crop",
+        "kind": 2,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "def analyze_face_crop(face_rgb: np.ndarray) -> dict[str, Any]:\n    texture = _texture_inconsistency_score(face_rgb)\n    lighting = _lighting_mismatch_score(face_rgb)\n    edge = _face_edge_score(face_rgb)\n    pixel = _jpeg_block_artifact_score(_rgb_to_gray(face_rgb))\n    chroma = _chroma_artifact_score(face_rgb)\n    eye = _eye_state_score(face_rgb)\n    lap = _laplacian_variance(_rgb_to_gray(face_rgb))\n    edge_density = _edge_density(_rgb_to_gray(face_rgb))\n    fallback_score = _clamp01(",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_image_bytes",
+        "kind": 2,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "def analyze_image_bytes(content: bytes, filename: str) -> dict[str, Any]:\n    try:\n        img = Image.open(io.BytesIO(content))\n        img = ImageOps.exif_transpose(img).convert(\"RGB\")\n    except Exception as e:  # noqa: BLE001\n        raise ValueError(f\"Could not read image: {e}\") from e\n    img.thumbnail((1280, 1280))\n    rgb = np.asarray(img, dtype=np.uint8)\n    analysis = _analyze_rgb_frame(rgb)\n    return _build_result(",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_video_bytes",
+        "kind": 2,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "def analyze_video_bytes(content: bytes, filename: str) -> dict[str, Any]:\n    if cv2 is None:\n        raise RuntimeError(\"OpenCV is required for video analysis. Install opencv-python-headless.\")\n    suffix = Path(filename or \"upload\").suffix.lower()\n    if suffix not in VIDEO_EXTENSIONS:\n        suffix = \".mp4\"\n    tmp = tempfile.NamedTemporaryFile(delete=False, suffix=suffix)\n    tmp_path = tmp.name\n    try:\n        tmp.write(content)",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "build_report_narrative",
+        "kind": 2,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "def build_report_narrative(result: dict[str, Any]) -> dict[str, Any]:\n    fake_p = int(result.get(\"fakeProbability\", result.get(\"fake_probability\", 0)))\n    real_p = int(result.get(\"realProbability\", 100 - fake_p))\n    label = str(result.get(\"label\", \"Uncertain\"))\n    media = str(result.get(\"media_type\", \"image\"))\n    risk = str(result.get(\"riskLevel\", \"Medium\"))\n    features = result.get(\"feature_analysis\") or {}\n    frames = result.get(\"metrics\", {}).get(\"frames_analyzed\")\n    faces = result.get(\"metrics\", {}).get(\"faces_detected\")\n    explanation = (",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_upload",
+        "kind": 2,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "def analyze_upload(content: bytes, filename: str, declared_mime: str | None) -> dict[str, Any]:\n    name = (filename or \"\").lower()\n    mime = (declared_mime or \"\").lower()\n    suffix = Path(name).suffix\n    is_video = suffix in VIDEO_EXTENSIONS or mime.startswith(\"video/\")\n    is_image = suffix in IMAGE_EXTENSIONS or mime.startswith(\"image/\")\n    if is_video:\n        return analyze_video_bytes(content, filename)\n    if is_image:\n        return analyze_image_bytes(content, filename)",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_EXTENSIONS",
+        "kind": 5,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "IMAGE_EXTENSIONS = {\".jpg\", \".jpeg\", \".png\", \".webp\"}\nVIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".webm\", \".avi\", \".mkv\", \".m4v\"}\n@dataclass\nclass FaceDetection:\n    x: int\n    y: int\n    w: int\n    h: int\n    detector: str\n    confidence: float | None = None",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "VIDEO_EXTENSIONS",
+        "kind": 5,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "VIDEO_EXTENSIONS = {\".mp4\", \".mov\", \".webm\", \".avi\", \".mkv\", \".m4v\"}\n@dataclass\nclass FaceDetection:\n    x: int\n    y: int\n    w: int\n    h: int\n    detector: str\n    confidence: float | None = None\n_MTCNN_DETECTOR: Any | None = None",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "_MTCNN_ATTEMPTED",
+        "kind": 5,
+        "importPath": "backend.app.services.media_analyzer",
+        "description": "backend.app.services.media_analyzer",
+        "peekOfCode": "_MTCNN_ATTEMPTED = False\ndef _get_mtcnn_detector() -> Any | None:\n    global _MTCNN_ATTEMPTED, _MTCNN_DETECTOR\n    if _MTCNN_ATTEMPTED:\n        return _MTCNN_DETECTOR\n    _MTCNN_ATTEMPTED = True\n    try:\n        from mtcnn import MTCNN  # type: ignore\n        _MTCNN_DETECTOR = MTCNN()\n    except Exception:  # noqa: BLE001",
+        "detail": "backend.app.services.media_analyzer",
+        "documentation": {}
+    },
+    {
+        "label": "predict_deepfake_probability",
+        "kind": 2,
+        "importPath": "backend.app.utils.deepfake_model",
+        "description": "backend.app.utils.deepfake_model",
+        "peekOfCode": "def predict_deepfake_probability(content: bytes, filename: str, declared_mime: str | None) -> dict[str, Any]:\n    result = analyze_upload(content, filename, declared_mime)\n    artifact_prediction = _clamp01(float(result.get(\"prediction_score\", 0.5)))\n    ensemble = _predict_with_ensemble(content, filename, declared_mime)\n    ensemble_prediction = ensemble.get(\"prediction\")\n    model_info = result.setdefault(\"model\", {})\n    if ensemble_prediction is not None:\n        prediction = _clamp01((0.75 * float(ensemble_prediction)) + (0.25 * artifact_prediction))\n        model_info[\"active\"] = \"Ensemble + Artifact\"\n        model_info[\"ensemble_models\"] = ensemble.get(\"model_names\", [])",
+        "detail": "backend.app.utils.deepfake_model",
+        "documentation": {}
+    },
+    {
+        "label": "FAKE_THRESHOLD",
+        "kind": 5,
+        "importPath": "backend.app.utils.deepfake_model",
+        "description": "backend.app.utils.deepfake_model",
+        "peekOfCode": "FAKE_THRESHOLD = float(os.getenv(\"DEEPFAKE_FAKE_THRESHOLD\", \"0.70\"))\nREAL_THRESHOLD = float(os.getenv(\"DEEPFAKE_REAL_THRESHOLD\", \"0.70\"))\nMAX_VIDEO_FRAMES = int(os.getenv(\"DEEPFAKE_MAX_VIDEO_FRAMES\", \"16\"))\n_DETECTORS: list[Any] | None = None\ndef _clamp01(value: float) -> float:\n    return max(0.0, min(1.0, float(value)))\ndef _is_video(filename: str, declared_mime: str | None) -> bool:\n    suffix = Path((filename or \"\").lower()).suffix\n    mime = (declared_mime or \"\").lower()\n    return suffix in VIDEO_EXTENSIONS or mime.startswith(\"video/\")",
+        "detail": "backend.app.utils.deepfake_model",
+        "documentation": {}
+    },
+    {
+        "label": "REAL_THRESHOLD",
+        "kind": 5,
+        "importPath": "backend.app.utils.deepfake_model",
+        "description": "backend.app.utils.deepfake_model",
+        "peekOfCode": "REAL_THRESHOLD = float(os.getenv(\"DEEPFAKE_REAL_THRESHOLD\", \"0.70\"))\nMAX_VIDEO_FRAMES = int(os.getenv(\"DEEPFAKE_MAX_VIDEO_FRAMES\", \"16\"))\n_DETECTORS: list[Any] | None = None\ndef _clamp01(value: float) -> float:\n    return max(0.0, min(1.0, float(value)))\ndef _is_video(filename: str, declared_mime: str | None) -> bool:\n    suffix = Path((filename or \"\").lower()).suffix\n    mime = (declared_mime or \"\").lower()\n    return suffix in VIDEO_EXTENSIONS or mime.startswith(\"video/\")\ndef _load_ensemble_detectors() -> list[Any]:",
+        "detail": "backend.app.utils.deepfake_model",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_VIDEO_FRAMES",
+        "kind": 5,
+        "importPath": "backend.app.utils.deepfake_model",
+        "description": "backend.app.utils.deepfake_model",
+        "peekOfCode": "MAX_VIDEO_FRAMES = int(os.getenv(\"DEEPFAKE_MAX_VIDEO_FRAMES\", \"16\"))\n_DETECTORS: list[Any] | None = None\ndef _clamp01(value: float) -> float:\n    return max(0.0, min(1.0, float(value)))\ndef _is_video(filename: str, declared_mime: str | None) -> bool:\n    suffix = Path((filename or \"\").lower()).suffix\n    mime = (declared_mime or \"\").lower()\n    return suffix in VIDEO_EXTENSIONS or mime.startswith(\"video/\")\ndef _load_ensemble_detectors() -> list[Any]:\n    global _DETECTORS",
+        "detail": "backend.app.utils.deepfake_model",
+        "documentation": {}
+    },
+    {
+        "label": "load_env_file",
+        "kind": 2,
+        "importPath": "backend.app.utils.env",
+        "description": "backend.app.utils.env",
+        "peekOfCode": "def load_env_file(filename: str = \".env\") -> None:\n    root = Path(__file__).resolve().parents[3]\n    env_path = root / filename\n    if not env_path.exists():\n        return\n    for raw_line in env_path.read_text(encoding=\"utf-8\").splitlines():\n        line = raw_line.strip()\n        if not line or line.startswith(\"#\") or \"=\" not in line:\n            continue\n        key, value = line.split(\"=\", 1)",
+        "detail": "backend.app.utils.env",
         "documentation": {}
     },
     {
@@ -345,7 +1185,7 @@
         "kind": 2,
         "importPath": "backend.app.utils.security",
         "description": "backend.app.utils.security",
-        "peekOfCode": "def hash_password(password: str):\n    return pwd_context.hash(password)\ndef verify_password(plain, hashed):\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(hours=2)\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    return bcrypt.hashpw(password.encode(\"utf-8\"), bcrypt.gensalt()).decode(\"utf-8\")\ndef verify_password(plain: str, hashed: str) -> bool:\n    try:\n        return bcrypt.checkpw(plain.encode(\"utf-8\"), hashed.encode(\"utf-8\"))\n    except (ValueError, TypeError):\n        return False\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(hours=2)",
         "detail": "backend.app.utils.security",
         "documentation": {}
     },
@@ -354,7 +1194,7 @@
         "kind": 2,
         "importPath": "backend.app.utils.security",
         "description": "backend.app.utils.security",
-        "peekOfCode": "def verify_password(plain, hashed):\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(hours=2)\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "peekOfCode": "def verify_password(plain: str, hashed: str) -> bool:\n    try:\n        return bcrypt.checkpw(plain.encode(\"utf-8\"), hashed.encode(\"utf-8\"))\n    except (ValueError, TypeError):\n        return False\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(hours=2)\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
         "detail": "backend.app.utils.security",
         "documentation": {}
     },
@@ -368,20 +1208,11 @@
         "documentation": {}
     },
     {
-        "label": "pwd_context",
-        "kind": 5,
-        "importPath": "backend.app.utils.security",
-        "description": "backend.app.utils.security",
-        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\nSECRET_KEY = \"your_secret_key\"\nALGORITHM = \"HS256\"\ndef hash_password(password: str):\n    return pwd_context.hash(password)\ndef verify_password(plain, hashed):\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(hours=2)",
-        "detail": "backend.app.utils.security",
-        "documentation": {}
-    },
-    {
         "label": "SECRET_KEY",
         "kind": 5,
         "importPath": "backend.app.utils.security",
         "description": "backend.app.utils.security",
-        "peekOfCode": "SECRET_KEY = \"your_secret_key\"\nALGORITHM = \"HS256\"\ndef hash_password(password: str):\n    return pwd_context.hash(password)\ndef verify_password(plain, hashed):\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(hours=2)\n    to_encode.update({\"exp\": expire})",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"JWT_SECRET_KEY\", \"your_secret_key\")\nALGORITHM = \"HS256\"\ndef hash_password(password: str) -> str:\n    return bcrypt.hashpw(password.encode(\"utf-8\"), bcrypt.gensalt()).decode(\"utf-8\")\ndef verify_password(plain: str, hashed: str) -> bool:\n    try:\n        return bcrypt.checkpw(plain.encode(\"utf-8\"), hashed.encode(\"utf-8\"))\n    except (ValueError, TypeError):\n        return False\ndef create_access_token(data: dict):",
         "detail": "backend.app.utils.security",
         "documentation": {}
     },
@@ -390,17 +1221,17 @@
         "kind": 5,
         "importPath": "backend.app.utils.security",
         "description": "backend.app.utils.security",
-        "peekOfCode": "ALGORITHM = \"HS256\"\ndef hash_password(password: str):\n    return pwd_context.hash(password)\ndef verify_password(plain, hashed):\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict):\n    to_encode = data.copy()\n    expire = datetime.utcnow() + timedelta(hours=2)\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)",
+        "peekOfCode": "ALGORITHM = \"HS256\"\ndef hash_password(password: str) -> str:\n    return bcrypt.hashpw(password.encode(\"utf-8\"), bcrypt.gensalt()).decode(\"utf-8\")\ndef verify_password(plain: str, hashed: str) -> bool:\n    try:\n        return bcrypt.checkpw(plain.encode(\"utf-8\"), hashed.encode(\"utf-8\"))\n    except (ValueError, TypeError):\n        return False\ndef create_access_token(data: dict):\n    to_encode = data.copy()",
         "detail": "backend.app.utils.security",
         "documentation": {}
     },
     {
-        "label": "users_db",
-        "kind": 5,
-        "importPath": "backend.app.database",
-        "description": "backend.app.database",
-        "peekOfCode": "users_db = {\n    \"test@gmail.com\": {\n        \"email\": \"test@gmail.com\",\n        \"password\": \"123456\"\n    }\n}",
-        "detail": "backend.app.database",
+        "label": "seed_demo_user",
+        "kind": 2,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "def seed_demo_user() -> None:\n    email = os.getenv(\"DEMO_EMAIL\", \"demo@deepfake.ai\").strip().lower()\n    password = os.getenv(\"DEMO_PASSWORD\", \"Demo@1234\")\n    db = SessionLocal()\n    try:\n        existing = db.query(User).filter(func.lower(User.email) == email).first()\n        if not existing:\n            db.add(User(email=email, password=hash_password(password)))\n            db.commit()\n    finally:",
+        "detail": "backend.app.main",
         "documentation": {}
     },
     {
@@ -408,7 +1239,7 @@
         "kind": 2,
         "importPath": "backend.app.main",
         "description": "backend.app.main",
-        "peekOfCode": "def home():\n    return {\"message\": \"Backend running 🚀\"}",
+        "peekOfCode": "def home():\n    return {\"message\": \"Backend running\"}",
         "detail": "backend.app.main",
         "documentation": {}
     },
@@ -417,35 +1248,17 @@
         "kind": 5,
         "importPath": "backend.app.main",
         "description": "backend.app.main",
-        "peekOfCode": "app = FastAPI()\n# ✅ CORS (VERY IMPORTANT for frontend)\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],  # change later to frontend URL\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n# ✅ include routes",
+        "peekOfCode": "app = FastAPI(lifespan=lifespan)\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"http://localhost:5173\", \"http://127.0.0.1:5173\"],\n    allow_origin_regex=r\"https?://(localhost|127\\.0\\.0\\.1|\\[::1\\])(:\\d+)?$\",\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\napp.include_router(auth_router)",
         "detail": "backend.app.main",
         "documentation": {}
     },
     {
-        "label": "LoginRequest",
-        "kind": 6,
-        "importPath": "backend.app.tempCodeRunnerFile",
-        "description": "backend.app.tempCodeRunnerFile",
-        "peekOfCode": "class LoginRequest(BaseModel):\n    email: str\n    password: str\n@app.post(\"/login\")\ndef login(data: LoginRequest):\n    user = users_db.get(data.email)\n    if not user or user[\"password\"] != data.password:\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    token = create_access_token({\"sub\": data.email})\n    return {",
-        "detail": "backend.app.tempCodeRunnerFile",
-        "documentation": {}
-    },
-    {
-        "label": "login",
+        "label": "is_installed",
         "kind": 2,
-        "importPath": "backend.app.tempCodeRunnerFile",
-        "description": "backend.app.tempCodeRunnerFile",
-        "peekOfCode": "def login(data: LoginRequest):\n    user = users_db.get(data.email)\n    if not user or user[\"password\"] != data.password:\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    token = create_access_token({\"sub\": data.email})\n    return {\n        \"access_token\": token,\n        \"token_type\": \"bearer\"\n    }",
-        "detail": "backend.app.tempCodeRunnerFile",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "backend.app.tempCodeRunnerFile",
-        "description": "backend.app.tempCodeRunnerFile",
-        "peekOfCode": "app = FastAPI()\nclass LoginRequest(BaseModel):\n    email: str\n    password: str\n@app.post(\"/login\")\ndef login(data: LoginRequest):\n    user = users_db.get(data.email)\n    if not user or user[\"password\"] != data.password:\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    token = create_access_token({\"sub\": data.email})",
-        "detail": "backend.app.tempCodeRunnerFile",
+        "importPath": "backend.tmp_env_checks",
+        "description": "backend.tmp_env_checks",
+        "peekOfCode": "def is_installed(name: str) -> bool:\n    try:\n        importlib.import_module(name)\n        return True\n    except Exception:\n        return False\nprint('mtcnn_installed:', is_installed('mtcnn'))\nprint('tensorflow_installed:', is_installed('tensorflow'))\ntry:\n    from backend.app.services.media_analyzer import detect_faces",
+        "detail": "backend.tmp_env_checks",
         "documentation": {}
     },
     {
@@ -482,6 +1295,33 @@
         "description": "frontend.node_modules.flatted.python.flatted",
         "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
         "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.print_user_emails",
+        "description": "scripts.print_user_emails",
+        "peekOfCode": "def main() -> None:\n    db_path = os.getenv(\"DB_PATH\", \"deepfake_local.db\")\n    abs_path = os.path.abspath(db_path)\n    print(f\"DB_PATH={abs_path}\")\n    con = sqlite3.connect(abs_path)\n    try:\n        cur = con.cursor()\n        tables = cur.execute(\"select name from sqlite_master where type='table'\").fetchall()\n        print(\"tables=\", tables)\n        emails = cur.execute(\"select email from users order by id\").fetchall()",
+        "detail": "scripts.print_user_emails",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.smoke_analyze",
+        "description": "scripts.smoke_analyze",
+        "peekOfCode": "def main() -> None:\n    client = TestClient(app)\n    img = Image.new(\"RGB\", (64, 64), color=(40, 90, 200))\n    buf = io.BytesIO()\n    img.save(buf, format=\"PNG\")\n    r1 = client.post(\"/analyze\", files={\"file\": (\"smoke.png\", buf.getvalue(), \"image/png\")})\n    print(\"IMAGE /analyze status\", r1.status_code)\n    if r1.status_code != 200:\n        print(r1.text)\n        sys.exit(1)",
+        "detail": "scripts.smoke_analyze",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT",
+        "kind": 5,
+        "importPath": "scripts.smoke_analyze",
+        "description": "scripts.smoke_analyze",
+        "peekOfCode": "ROOT = Path(__file__).resolve().parents[1]\nsys.path.insert(0, str(ROOT))\nimport numpy as np  # noqa: E402\nfrom fastapi.testclient import TestClient  # noqa: E402\nfrom PIL import Image  # noqa: E402\nfrom backend.app.main import app  # noqa: E402\ndef _check(body: dict, label: str) -> None:\n    for key in (\"fake_probability\", \"verdict\", \"real_like_percent\", \"fake_like_percent\", \"media_type\"):\n        assert key in body, f\"{label}: missing {key}\"\n    p = int(body[\"fake_probability\"])",
+        "detail": "scripts.smoke_analyze",
         "documentation": {}
     }
 ]

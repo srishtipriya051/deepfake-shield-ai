@@ -1,0 +1,167 @@
+.rep-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rep-toolbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px 14px;
+}
+
+.rep-detail {
+  margin: 0 18px 18px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(30, 58, 138, 0.14);
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.06), rgba(255, 255, 255, 0.55));
+}
+
+.rep-detail h3 {
+  margin: 0 0 10px;
+}
+
+.rep-kv {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 8px 12px;
+  font-weight: 700;
+  color: rgba(15, 23, 42, 0.86);
+}
+
+.rep-kv span:nth-child(odd) {
+  color: rgba(15, 23, 42, 0.55);
+}
+
+.rep-metrics {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(30, 58, 138, 0.1);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.rep-muted {
+  margin-top: 10px;
+  color: rgba(15, 23, 42, 0.62);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.rep-section {
+  margin-top: 16px;
+}
+
+.rep-section-title {
+  margin: 0 0 8px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(30, 58, 138, 0.85);
+}
+
+.rep-explanation {
+  margin: 0;
+  font-weight: 650;
+  line-height: 1.55;
+  color: rgba(15, 23, 42, 0.88);
+  font-size: 14px;
+}
+
+.rep-findings {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-weight: 650;
+  line-height: 1.5;
+  color: rgba(15, 23, 42, 0.86);
+  font-size: 13px;
+}
+
+.rep-findings li {
+  margin-bottom: 6px;
+}
+
+.rep-metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-weight: 650;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(30, 58, 138, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rep-metrics-table th,
+.rep-metrics-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(30, 58, 138, 0.08);
+}
+
+.rep-metrics-table thead th {
+  background: rgba(37, 99, 235, 0.08);
+  color: rgba(15, 23, 42, 0.75);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rep-metrics-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.rep-metric-val {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  color: rgba(15, 23, 42, 0.78);
+}
+
+.rep-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rep-pdf-btn {
+  min-width: min(280px, 100%);
+  text-align: center;
+}
+
+@media (max-width: 540px) {
+  .rep-kv {
+    grid-template-columns: 1fr;
+    gap: 2px 0;
+  }
+
+  .rep-kv span:nth-child(odd) {
+    margin-top: 8px;
+  }
+
+  .rep-kv span:nth-child(odd):first-child {
+    margin-top: 0;
+  }
+
+  .rep-detail {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .rep-toolbar {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.rep-wrap.ds-table-wrap .ds-table {
+  min-width: 640px;
+}

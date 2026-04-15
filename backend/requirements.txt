@@ -1,6 +1,13 @@
 ﻿fastapi
 uvicorn
 sqlalchemy
-passlib==1.7.4
-bcrypt<4
-python-jose
+bcrypt>=4.1.0
+python-jose[cryptography]
+python-multipart
+pillow
+numpy
+opencv-python-headless
+tensorflow
+torch
+torchvision
+mtcnn; python_version < "3.13"
